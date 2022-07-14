@@ -9,27 +9,33 @@
 
     <ImageButton
         android:id="@+id/botonCrono"
-        android:layout_width="283dp"
+        android:layout_width="0dp"
         android:layout_height="253dp"
         android:layout_marginTop="92dp"
-        android:backgroundTint="#B31414"
         android:adjustViewBounds="true"
+        android:backgroundTint="#B31414"
+        android:onClick="responderPulsacionCrono"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/crono" />
+        app:srcCompat="@mipmap/crono"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/botonCont"
-        android:layout_width="309dp"
+        android:layout_width="0dp"
         android:layout_height="220dp"
-        android:layout_marginTop="96dp"
-        android:backgroundTint="@color/purple_200"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="92dp"
         android:adjustViewBounds="true"
+        android:backgroundTint="@color/purple_200"
+        android:onClick="responderPulsacionConta"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/botonCrono"
         app:layout_constraintStart_toStartOf="@+id/botonCrono"
         app:layout_constraintTop_toBottomOf="@+id/botonCrono"
-        app:srcCompat="@mipmap/contador" />
+        app:srcCompat="@mipmap/contador"
+        tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

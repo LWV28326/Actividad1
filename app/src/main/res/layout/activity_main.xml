@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/botonCrono"
+        android:layout_width="283dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="#B31414"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/crono" />
+
+    <ImageButton
+        android:id="@+id/botonCont"
+        android:layout_width="309dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="@color/purple_200"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/botonCrono"
+        app:layout_constraintStart_toStartOf="@+id/botonCrono"
+        app:layout_constraintTop_toBottomOf="@+id/botonCrono"
+        app:srcCompat="@mipmap/contador" />
+</androidx.constraintlayout.widget.ConstraintLayout>
